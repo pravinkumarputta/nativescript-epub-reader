@@ -2,10 +2,10 @@
 NativeScript plugin to open and read ePub files natively. 
 
 ## Getting Started
-* `npm install nativescript-pdf`
+* `npm install nativescript-epub-reader`
 * For iOS Place your `epub` files in your `App_Resources/iOS` directory.
 * For Android, required absolute file path as parameter.
-* Import `EPubReader` in your page and open the file.
+* Import `EpubReader` in your page and open the file.
 
 
 ## Android Permissions Required
@@ -45,7 +45,7 @@ Then add network_security_config.xml in your app module's AndroidManifest.xml
 ### Code Sample
 ```
 import {Observable} from 'data/observable';
-import {EPubReader} from 'nativescript-epub';
+import { EpubReader } from 'nativescript-epub-reader';
 import * as application from "tns-core-modules/application";
 
 export class HelloWorldModel extends Observable {
