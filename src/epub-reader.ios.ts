@@ -14,7 +14,7 @@ export class EpubReader {
         return version;
     }
     open(fileName: string) {
-        let bookPath = NSBundle.mainBundle.pathForResourceOfType(fileName, 'epub');
+        let bookPath = NSBundle.mainBundle.pathForResourceOfType(fileName, 'epub') || fileName;
         FolioReader.presentReaderWithParentViewControllerWithEpubPathAndConfigShouldRemoveEpubAnimated(
             topmost().currentPage.ios,
             bookPath,
